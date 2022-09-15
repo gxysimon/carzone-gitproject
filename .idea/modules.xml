@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../carhouse/.idea/carhouse.iml" filepath="$PROJECT_DIR$/../carhouse/.idea/carhouse.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/carzone-project.iml" filepath="$PROJECT_DIR$/.idea/carzone-project.iml" />
     </modules>
   </component>
