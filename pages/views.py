@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Team
+from cars.models import Car
 # from . import views
 
 
@@ -7,8 +8,12 @@ from .models import Team
 
 def home(request):
     teams = Team.objects.all()
+    featured_cars = Car.objects.order_by('-created_data').filter(is_featured=True)
+    all_cars = Car.objects.order_by('-created_data')
     data = {
         'teams': teams,
+        'featured_car': featured_cars,
+        'all_cars':all_cars
     }
     return render(request, 'pages/home.html', data)
 
