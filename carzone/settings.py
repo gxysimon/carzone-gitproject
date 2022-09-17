@@ -166,5 +166,5 @@ EMAIL_HOST_PASSWORD = 'ftpufxjrbtugthfl'
 EMAIL_USE_TLS = True
 
 # whitenoise
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
